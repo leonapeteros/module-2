@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ <h1>Student Page</h1>
+    <ul>
+    <li>{% for student in student_list %}
+        <li>{{student.first_name}} {{student.last_name}} </li>
+    {% endfor %} </li>
+    </ul>
+</body>
+</html>
+{% endautoescape %}
